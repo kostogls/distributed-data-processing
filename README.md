@@ -20,7 +20,8 @@ have as they are random generated too, and the same threshold, which is a value 
 how many keys are common between the 2 databases.
 All those parameters give us the opportunity to test the application and the performance of
 algorithms under various different occasions.
-3. Pipelined hash join
+
+## Pipelined hash join
 This algorithm combines hash and pipeline techniques to efficiently perform a join. The idea is to
 probe and insert each value of the two databases one by one. The algorithm that can work in a
 streaming environment. It constructs two hash tables one for each input. For each input tuple, the
