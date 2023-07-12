@@ -50,3 +50,6 @@ timestamp difference condition is satisfied, it appends the values in the final 
 First, we get the keys of the smallest db, by measuring the db sizes, and then for each key in the
 small db, get the value of both dbs for that key, and after checking the timestamp difference, append
 the tuple in the join result.
+
+## How to use
+Download the zip code, unzip it, cd into the ./distributed directory. Then open a terminal and run the command: "docker-compose up"
