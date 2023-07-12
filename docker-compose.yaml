@@ -1,0 +1,15 @@
+version: '3'
+services:
+  my-python-project:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    command: python main.py
+    depends_on:
+      - redis
+  redis:
+    image: redis
+    ports:
+      - 6380:6379
